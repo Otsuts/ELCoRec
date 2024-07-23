@@ -1,4 +1,4 @@
-This this the code repository for paper: Integrating Essential Supplementary Information into Large Language Models via Graph Attention for Recommendation.
+This this the code repository for paper: ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation. This paper has been accepted by CIKM 2024.
 
 ## 0. Environment
 You can install nessesary packages by running:
@@ -66,4 +66,15 @@ CUDA_VISIBLE_DEVICES=<your gpu id> python finetune_mymodel.py -- data_type <data
 ```
 CUDA_VISIBLE_DEVICES=<your gpu id> python inference_mymodel.py --data_type <data_type>_<temp_type>_K --dataset ml-1m --K <K> --chunk_interval <start_interval>_<end_interval>
 ```
+## Citation
+If you find this repo useful, please cite our paper.
 
+@misc{chen2024elcorecenhancelanguageunderstanding,
+      title={ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation}, 
+      author={Jizheng Chen and Kounianhua Du and Jianghao Lin and Bo Chen and Ruiming Tang and Weinan Zhang},
+      year={2024},
+      eprint={2406.18825},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2406.18825}, 
+}
